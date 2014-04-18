@@ -75,6 +75,7 @@ GEM
     multi_xml (0.5.5)
     optionable (0.2.0)
     origin (2.1.1)
+    pg (0.15.1-x86-mingw32)
     polyglot (0.3.4)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -87,6 +88,11 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.0.3)
       sprockets-rails (~> 2.0.0)
+    rails_12factor (0.0.2)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.2)
+    rails_stdout_logging (0.0.3)
     railties (4.0.3)
       actionpack (= 4.0.3)
       activesupport (= 4.0.3)
@@ -147,7 +153,9 @@ DEPENDENCIES
   jquery-rails
   league_of_legends
   mongoid!
+  pg (= 0.15.1)
   rails (= 4.0.3)
+  rails_12factor (= 0.0.2)
   ruby-lol
   sass-rails (~> 4.0.0)
   sdoc
