@@ -1,0 +1,18 @@
+<h1>Find A Summoner!</h1>
+<hr>
+<%= form_for @summoner do |f| %>
+	Input Summoner Name: <%= f.text_field :name %> <br>
+	<%= f.submit "Go!"%>
+<% end %>
+
+<hr>
+<h2>Summoner Info:</h2> <br>
+<% if !@summoners.blank? %>
+	<% for item in @summoners %>
+	Summoner Name: <%= item.name %> <br>
+	Summoner Id: <%= item.sumid %> <br>
+	Summoner Level: <%= item.level%> <br>
+	<% end %>
+<% else %>
+
+<% end %>
